@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "UTM";
+    font-display: swap;
+    src: url("../fonts/word/UTM\ HelvetIns.ttf") format("truetype");
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    color: $black;
+    font-family: "Roboto", sans-serif;
+    @include maxWidth(768px) {
+        font-size: 14px;
+    }
+}
+.section-title {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: $blue;
+    font-weight: 900;
+}
+.section-title-img {
+    width: 31px;
+    height: 31px;
+    margin-right: 10px;
+}
+.gutters-10 {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.gutters-10 [class^="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+}

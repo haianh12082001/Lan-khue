@@ -1,0 +1,17 @@
+@mixin maxWidth($q) {
+    @media screen and (max-width: $q) {
+        @content;
+    }
+}
+@mixin minWidth($q) {
+    @media screen and (min-width: $q) {
+        @content;
+    }
+}
+
+@mixin color-gradient {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #e68651, #d21155);
+}

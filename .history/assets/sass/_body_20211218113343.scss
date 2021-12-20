@@ -1,0 +1,21 @@
+.banner img {
+    height: 369px;
+    width: 100%;
+    object-fit: cover;
+}
+.section-buy-medicine {
+    .title-sub {
+        color: $blue;
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .item {
+        border-right: 1px solid #e1e7ed;
+        &:last-child {
+            border: none;
+        }
+    }
+    img {
+        max-height: 70px;
+    }
+}

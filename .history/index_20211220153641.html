@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3/css/all.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="./assets/css/app.css" />
+    </head>
+    <body>
+        <div class="top-header">
+            <div class="container">
+                <div class="py-3 d-flex justify-content-between align-items-center">
+                    <div class="info d-flex">
+                        <div class="top-header-hotline">
+                            <i class="fas fa-phone-alt"></i>
+                            Hotline: (84)123 456 789
+                        </div>
+                        <div class="top-header-email">
+                            <i class="fas fa-envelope"></i>
+                            info@lankhuepharmacy.vn
+                        </div>
+                    </div>
+                    <div class="question">
+                        <a href="">
+                            <i class="fas fa-question-circle"></i>
+                            Đặt câu hỏi với chúng tôi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header-searchbar py-2">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-8">
+                            <div class="header-logo">
+                                <a href="" class="d-flex flex-shrink-0">
+                                    <img src="./assets/img/logo.png" alt="" />
+                                    <div class="body">
+                                        <div class="logo-name">LAN KHUE PHARMACY</div>
+                                        <div class="logo-slogan">Not just a pharmacy, but a family</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-3 d-none d-lg-block">
+                            <div class="input-group">
+                                <form action="" class="header-search">
+                                    <select name="CatId" id="catalog">
+                                        <option value="">Loại sản phẩm</option>
+                                        <option value="">Danh mục thuốc</option>
+                                        <option value="">Thực Phẩm Chức Năng</option>
+                                        <option value="">Mẹ Và Bé</option>
+                                        <option value="">Thiết Bị Y Tế</option>
+                                        <option value="">Sữa y khoa</option>
+                                        <option value="">Các sản phẩm khác</option>
+                                    </select>
+                                    <input type="text" placeholder="Nhập tìm kiếm bằng từ khoá" />
+
+                                    <button type="submit">
+                                        <i class="fas fa-search"></i>
+                                        Tìm kiếm
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-4 d-flex align-items-center justify-content-lg-center justify-content-end">
+                            <div class="header-cart position-relative">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span id="itemshop">0</span>
+                            </div>
+                            <div class="header-bar">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-3 d-none d-lg-block">
+                            <a href="" class="header-btn"> Gọi để nhận tư vấn </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div class="container">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href=""><i class="fas fa-home"></i></a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Giới thiệu</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href=""> Danh mục thuốc </a>
+                            <i class="fas fa-angle-down"></i>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="">Hệ thần kinh</a>
+                                </li>
+                                <li>
+                                    <a href="">Hệ cơ xương</a>
+                                </li>
+                                <li>
+                                    <a href="">Hệ hô hấp</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Thực phẩm chức năng</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Mẹ và bé</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Thiết bị y tế</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Sữa y khoa</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Tin tức</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="banner">
+            <img src="./assets/img/banner.jpg" alt="" />
+        </section>
+        <!-- Mua thuốc dễ dàng tại lankhuepharma -->
+        <section class="section-buy-medicine">
+            <div class="container">
+                <div class="text-center">
+                    <span class="title-sub">Mua thuốc dễ dàng tại</span>
+                    <span class="section-title">lankhuepharma</span>
+                </div>
+                <div class="row pt-lg-5 pt-3">
+                    <div class="col-12 col-md-4 item">
+                        <div class="text-center">
+                            <img src="./assets/img/buy-medicine/selfie 1.png" alt="" />
+                            <div class="body p-md-3">
+                                <div class="name">Chụp toa thuốc</div>
+                                <div class="des">đơn giản & nhanh chóng</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 item">
+                        <div class="text-center">
+                            <img src="./assets/img/buy-medicine/Group 375.png" alt="" />
+                            <div class="body p-md-3">
+                                <div class="name">nhập thông tin liên lạc</div>
+                                <div class="des">để được tư vấn đặt hàng</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 item">
+                        <div class="text-center">
+                            <img src="./assets/img/buy-medicine/pharmacist 1.png" alt="" />
+                            <div class="body p-md-3">
+                                <div class="name">nhận báo giá từ dược sỹ</div>
+                                <div class="des">kèm theo tư vấn miễn phí</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center pt-lg-5">
+                    <a href="" class="btn">Mua thuốc ngay</a>
+                </div>
+            </div>
+        </section>
+        <!-- Danh mục sản phẩm -->
+        <section class="product-category">
+            <div class="container">
+                <div class="section-title text-center">danh mục sản phẩm</div>
+                <div class="list">
+                    <div class="item">
+                        <div class="product-category-img">
+                            <a href=""><img src="./assets/img/product-category/elevit-196915 1.jpg" alt="" /></a>
+                        </div>
+                        <a href="" class="name">Dược phẩm</a>
+                    </div>
+                    <div class="item">
+                        <div class="product-category-img">
+                            <a href=""><img src="./assets/img/product-category/elevit-196915 1.jpg" alt="" /></a>
+                        </div>
+                        <a href="" class="name">Dược phẩm</a>
+                    </div>
+                    <div class="item">
+                        <div class="product-category-img">
+                            <a href=""><img src="./assets/img/product-category/elevit-196915 1.jpg" alt="" /></a>
+                        </div>
+                        <a href="" class="name">Dược phẩm</a>
+                    </div>
+                    <div class="item">
+                        <div class="product-category-img">
+                            <a href=""><img src="./assets/img/product-category/elevit-196915 1.jpg" alt="" /></a>
+                        </div>
+                        <a href="" class="name">Dược phẩm</a>
+                    </div>
+                    <div class="item">
+                        <div class="product-category-img">
+                            <a href=""><img src="./assets/img/product-category/elevit-196915 1.jpg" alt="" /></a>
+                        </div>
+                        <a href="" class="name">Dược phẩm</a>
+                    </div>
+                    <div class="item">
+                        <div class="product-category-img">
+                            <a href=""><img src="./assets/img/product-category/elevit-196915 1.jpg" alt="" /></a>
+                        </div>
+                        <a href="" class="name">Dược phẩm</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tăng sức đề kháng mùa dịch -->
+        <section class="container">
+            <div class="bg-light-blue">
+                <div class="section-title text-center py-lg-4 py-2">Tăng sức đề kháng mùa dịch</div>
+                <div class="row row-cols-lg-5 gutters-10 pb-lg-5 pb-3">
+                    <div class="col-lg col-6">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <a href="">
+                                    <img src="./assets/img/product/Rectangle 305.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="category">thực phẩm chức năng</div>
+                                <div class="name"><a href="">Hoạt Lạc Vương Plus</a></div>
+                                <div class="price">
+                                    <div class="new-price">12.534.000VNĐ</div>
+                                    <div class="old-price">15.555.612 vnd</div>
+                                </div>
+                                <div class="out-stock">
+                                    hết hàng
+                                    <a href="">Liên hệ</a>
+                                </div>
+                                <div class="evaluate-product">
+                                    <div class="icon">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="number">119</div>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sản phẩm bán chạy nhất -->
+        <section class="bestseller">
+            <div class="container">
+                <div class="d-flex align-items-center py-lg-3 justify-content-between">
+                    <div class="section-title d-flex align-items-center">
+                        <img src="./assets/img/Vector (6).png" alt="" class="section-title-img" />
+                        Bán chạy nhất
+                    </div>
+                    <div class="product-see-all">
+                        <a href="">Xem tất cả</a>
+                        <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="row row-cols-lg-5">
+                    <div class="col-lg col-6 py-lg-3">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <a href="">
+                                    <img src="./assets/img/product/Rectangle 305.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="product-info">
+                                <div class="category">thực phẩm chức năng</div>
+                                <div class="name"><a href="">Hoạt Lạc Vương Plus</a></div>
+                                <div class="price">
+                                    <div class="new-price">12.534.000VNĐ</div>
+                                    <div class="old-price">15.555.612 vnd</div>
+                                </div>
+                                <div class="out-stock">
+                                    hết hàng
+                                    <a href="">Liên hệ</a>
+                                </div>
+                                <div class="evaluate-product">
+                                    <div class="icon">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="number">119</div>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Để lại số điện thoại - để nhận tư vấn -->
+        <section class="contact">
+            <div class="container">
+                <div class="title">ĐỂ LẠI SỐ ĐIỆN THOẠI - NHẬN TƯ VẤN TRỰC TIẾP</div>
+                <form action="" class="contact-form">
+                    <input type="text" name="name" placeholder="Họ tên" />
+                    <input type="text" name="phone" placeholder="Số điện thoại" />
+                    <button type="submit">GỬI NGAY</button>
+                </form>
+            </div>
+        </section>
+        <!-- Dành riêng cho  -->
+        <section class="container">
+            <div class="tab-product">
+                <div class="title">Dành riêng cho</div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active h-100" data-toggle="tab" href="#tab-1">Người lớn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h-100" data-toggle="tab" href="#tab-2">Trẻ em</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h-100" data-toggle="tab" href="#tab-3">Mẹ & bé</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h-100" data-toggle="tab" href="#tab-3">Người cao tuổi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content mt-2">
+                <div class="tab-pane active" id="tab-1">
+                    <div class="row row-cols-lg-5">
+                        <div class="col-lg col-6 py-lg-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="">
+                                        <img src="./assets/img/product/Rectangle 305.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <div class="category">thực phẩm chức năng</div>
+                                    <div class="name"><a href="">Hoạt Lạc Vương Plus</a></div>
+                                    <div class="price">
+                                        <div class="new-price">12.534.000VNĐ</div>
+                                        <div class="old-price">15.555.612 vnd</div>
+                                    </div>
+                                    <div class="out-stock">
+                                        hết hàng
+                                        <a href="">Liên hệ</a>
+                                    </div>
+                                    <div class="evaluate-product">
+                                        <div class="icon">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="number">119</div>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                    <div class="row row-cols-lg-5">
+                        <div class="col-lg col-6 py-lg-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="">
+                                        <img src="./assets/img/product/Rectangle 305.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <div class="category">thực phẩm chức năng</div>
+                                    <div class="name"><a href="">Hoạt Lạc Vương Plus</a></div>
+                                    <div class="price">
+                                        <div class="new-price">12.534.000VNĐ</div>
+                                        <div class="old-price">15.555.612 vnd</div>
+                                    </div>
+                                    <div class="out-stock">
+                                        hết hàng
+                                        <a href="">Liên hệ</a>
+                                    </div>
+                                    <div class="evaluate-product">
+                                        <div class="icon">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="number">119</div>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                    <div class="row row-cols-lg-5">
+                        <div class="col-lg col-6 py-lg-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="">
+                                        <img src="./assets/img/product/Rectangle 305.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <div class="category">thực phẩm chức năng</div>
+                                    <div class="name"><a href="">Hoạt Lạc Vương Plus</a></div>
+                                    <div class="price">
+                                        <div class="new-price">12.534.000VNĐ</div>
+                                        <div class="old-price">15.555.612 vnd</div>
+                                    </div>
+                                    <div class="out-stock">
+                                        hết hàng
+                                        <a href="">Liên hệ</a>
+                                    </div>
+                                    <div class="evaluate-product">
+                                        <div class="icon">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="number">119</div>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-4  ">
+                    <div class="row row-cols-lg-5">
+                        <div class="col-lg col-6 py-lg-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="">
+                                        <img src="./assets/img/product/Rectangle 305.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <div class="category">thực phẩm chức năng</div>
+                                    <div class="name"><a href="">Hoạt Lạc Vương Plus</a></div>
+                                    <div class="price">
+                                        <div class="new-price">12.534.000VNĐ</div>
+                                        <div class="old-price">15.555.612 vnd</div>
+                                    </div>
+                                    <div class="out-stock">
+                                        hết hàng
+                                        <a href="">Liên hệ</a>
+                                    </div>
+                                    <div class="evaluate-product">
+                                        <div class="icon">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="number">119</div>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tin tức mới nhất -->
+        <section class="news">
+            <div class="container">
+                <div class="section-title text-center">Tin mới nhất</div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="news-item">
+                            <div class="news-img">
+                                <a href="">
+                                    <img src="./assets/img/news/Rectangle 276.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="body">
+                                <div class="name">
+                                    <a href="">Yokogawa Wins Water Supply Management System Order Management</a>
+                                </div>
+                                <div class="date my-1">12/07/2021</div>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore đaaa
+                                </div>
+                                <div class="mt-lg-4 mt-2">
+                                    <a href="" class="btn-view">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="news-item">
+                            <div class="news-img">
+                                <a href="">
+                                    <img src="./assets/img/news/Rectangle 276.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="body">
+                                <div class="name">
+                                    <a href="">Yokogawa Wins Water Supply Management System Order Management</a>
+                                </div>
+                                <div class="date my-1">12/07/2021</div>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore đaaa
+                                </div>
+                                <div class="mt-lg-4 mt-2">
+                                    <a href="" class="btn-view">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="news-item">
+                            <div class="news-img">
+                                <a href="">
+                                    <img src="./assets/img/news/Rectangle 276.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="body">
+                                <div class="name">
+                                    <a href="">Yokogawa Wins Water Supply Management System Order Management</a>
+                                </div>
+                                <div class="date my-1">12/07/2021</div>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore đaaa
+                                </div>
+                                <div class="mt-lg-4 mt-2">
+                                    <a href="" class="btn-view">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="news-item">
+                            <div class="news-img">
+                                <a href="">
+                                    <img src="./assets/img/news/Rectangle 276.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="body">
+                                <div class="name">
+                                    <a href="">Yokogawa Wins Water Supply Management System Order Management</a>
+                                </div>
+                                <div class="date my-1">12/07/2021</div>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore đaaa
+                                </div>
+                                <div class="mt-lg-4 mt-2">
+                                    <a href="" class="btn-view">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Cam kết dịch vụ  -->
+        <section class="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 pb-3">
+                        <div class="service-item">
+                            <i class="fas fa-truck"></i>
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="name">GIAO MIỄN PHÍ</div>
+                                <div class="des">Cho đơn hàng trên 5 triệu</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-3">
+                        <div class="service-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="name">30 NGÀY ĐỔI TRẢ</div>
+                                <div class="des">Đổi trả miễn phí</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-3">
+                        <div class="service-item">
+                            <i class="fas fa-medal"></i>
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="name">CHẤT LƯỢNG UY TÍN</div>
+                                <div class="des">Từ các thương hiệu</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-3">
+                        <div class="service-item">
+                            <i class="fas fa-headset"></i>
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="name">HỖ TRỢ MIỄN PHÍ</div>
+                                <div class="des">Hỗ trợ 24/7</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer-logo text-center mb-lg-4">
+                            <a href="">
+                                <img src="./assets/img/logo.png" alt="" />
+                                <div class="body">
+                                    <div class="logo-name">LAN KHUE PHARMACY</div>
+                                    <div class="logo-slogan">Not just a pharmacy, but a family</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex mb-lg-4">
+                            <i class="fas fa-home"></i>
+                            <div class="body ml-3"><b>Trụ sở chính :</b> Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor</div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="body ml-3">
+                                LIÊN LẠC VỚI CHÚNG TÔI
+                                <br />
+                                <b>Điện thoại:</b>(84) 123 456 789
+                                <br />
+                                <b>Email:info@lankhuepharmacy.vn </b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 pl-lg-5">
+                        <div class="title">LINH NHANH</div>
+                        <ul>
+                            <li>
+                                <a href="">Dược phẩm</a>
+                            </li>
+                            <li>
+                                <a href="">Thực phẩm chức năng</a>
+                            </li>
+                            <li>
+                                <a href="">Mỹ phẩm</a>
+                            </li>
+                            <li>
+                                <a href="">Sản phẩm cho mẹ bầu</a>
+                            </li>
+                            <li>
+                                <a href="">Sản phẩm cho bé</a>
+                            </li>
+                            <li>
+                                <a href="">Sữa dinh dưỡng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="title">CHÍNH SÁCH</div>
+                        <ul>
+                            <li>
+                                <a href="">Chính sách đổi trả</a>
+                            </li>
+                            <li>
+                                <a href="">Điều khoản sử dụng</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách bảo mật</a>
+                            </li>
+                            <li>
+                                <a href="">Hướng dẫn thanh toán</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="title">FANPAGE</div>
+                        <div class="embed-responsive">
+                            <div
+                                class="fb-page fb_iframe_widget"
+                                data-href="https://www.facebook.com/Thietkewebsite.vico"
+                                data-tabs=""
+                                data-width="500"
+                                data-small-header="false"
+                                data-adapt-container-width="true"
+                                data-hide-cover="false"
+                                data-show-facepile="true"
+                                fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=278&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FHappy-Mom-Care-D%25E1%25BB%258Bch-v%25E1%25BB%25A5-ch%25C4%2583m-s%25C3%25B3c-m%25E1%25BA%25B9-v%25C3%25A0-b%25C3%25A9-102080522276959&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=&amp;width=500"
+                            >
+                                <span style="vertical-align: bottom; width: 278px; height: 130px"
+                                    ><iframe
+                                        name="f525248b2226c4"
+                                        width="500px"
+                                        height="1000px"
+                                        data-testid="fb:page Facebook Social Plugin"
+                                        title="fb:page Facebook Social Plugin"
+                                        frameborder="0"
+                                        allowtransparency="true"
+                                        allowfullscreen="true"
+                                        scrolling="no"
+                                        allow="encrypted-media"
+                                        src="https://www.facebook.com/v12.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df3f094dee5a41%26domain%3Dhappymomcare.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fhappymomcare.com%252Ff2fc6f3fab4b488%26relation%3Dparent.parent&amp;container_width=278&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FHappy-Mom-Care-D%25E1%25BB%258Bch-v%25E1%25BB%25A5-ch%25C4%2583m-s%25C3%25B3c-m%25E1%25BA%25B9-v%25C3%25A0-b%25C3%25A9-102080522276959&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=&amp;width=500"
+                                        style="border: none; visibility: visible; width: 278px; height: 130px"
+                                        class=""
+                                    ></iframe
+                                ></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="d-flex align-items-center">
+                            <div class="title">MẠNG XÃ HỘI</div>
+                            <div class="social">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="d-flex align-items-center">
+                            <div class="title">ĐĂNG KÝ NHẬN TIN</div>
+                            <form class="subscribe-form position-relative flex-grow-1">
+                                <input type="email" placeholder="Để lại email của bạn..." required="required" maxlength="50" />
+                                <button type="submit">THEO DÕI</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyright text-center">© 2021 lankhuepharmacy. All rights reserved. Designed by Vicogroup.vn</div>
+        <div id="fb-root"></div>
+        <script src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"
+            integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/clone.js"></script>
+    </body>
+</html>

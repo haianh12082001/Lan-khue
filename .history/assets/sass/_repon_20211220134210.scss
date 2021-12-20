@@ -1,0 +1,20 @@
+@media screen and (max-width: 1100px) {
+    .header-search {
+        #catalog {
+            width: 100px;
+        }
+    }
+    .contact-form input {
+        width: 300px;
+    }
+}
+@media screen and(max-width:1024px) {
+    .header-btn {
+        padding: 8px 20px;
+    }
+    .header-search {
+        input {
+            width: 220px;
+        }
+    }
+}

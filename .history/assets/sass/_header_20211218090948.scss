@@ -1,0 +1,54 @@
+.top-header {
+    background: #ebf5fb;
+    font-size: 13px;
+    color: $gray;
+    .info {
+        color: #333333;
+    }
+    .question a {
+        color: $gray;
+    }
+    i {
+        margin-right: 8px;
+    }
+}
+.top-header-hotline {
+    padding-right: 14px;
+    border-right: 1px solid $gray;
+}
+.top-header-email {
+    padding-left: 14px;
+}
+.header-logo {
+    flex: 1;
+    img {
+        width: 70px;
+        height: 69px;
+        object-fit: contain;
+    }
+    .body {
+        margin-left: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .name {
+        font-weight: 900;
+        color: $blue;
+        font-size: 18px;
+    }
+    .slogan {
+        font-size: 12px;
+        color: #4a4a4a;
+        font-style: italic;
+    }
+}
+.header-search {
+    #catalog {
+        order-radius: 5px;
+        border: none;
+        padding: 12px 16px;
+        height: 100%;
+        width: 150px;
+    }
+}

@@ -1,0 +1,25 @@
+@mixin maxWidth($q) {
+    @media screen and (max-width: $q) {
+        @content;
+    }
+}
+@mixin minWidth($q) {
+    @media screen and (min-width: $q) {
+        @content;
+    }
+}
+
+@mixin text-gradient {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #e68651, #d21155);
+}
+@mixin text-truncate($q) {
+    display: -webkit-box;
+    -webkit-line-clamp: $q;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}

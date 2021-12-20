@@ -1,0 +1,46 @@
+@media screen and (max-width: 1100px) {
+    .header-search {
+        #catalog {
+            width: 100px;
+        }
+    }
+    .contact-form input {
+        width: 350px;
+    }
+}
+@media screen and(max-width:1024px) {
+    .header-btn {
+        padding: 8px 20px;
+    }
+    .header-search {
+        input {
+            width: 220px;
+        }
+    }
+    .contact-form input {
+        width: 300px;
+    }
+}
+@media screen and(max-width:768px) {
+    .section-title {
+        font-size: 28px;
+    }
+    .section-buy-medicine {
+        .title-sub {
+            font-size: 24px;
+        }
+        .name {
+            font-size: 16px;
+            height: 48px;
+        }
+        .btn {
+            font-size: 16px;
+        }
+    }
+    .bg-light-blue {
+        padding: 0;
+    }
+    .product-img img {
+        height: 200px;
+    }
+}

@@ -1,0 +1,16 @@
+.top-header {
+    background: #ebf5fb;
+    font-size: 13px;
+    color: $gray;
+    .info i {
+        color: #333333;
+        margin-right: 8px;
+    }
+}
+.top-header-hotline {
+    padding-right: 14px;
+    border-right: 1px solid $gray;
+}
+.top-header-email {
+    padding-left: 14px;
+}
