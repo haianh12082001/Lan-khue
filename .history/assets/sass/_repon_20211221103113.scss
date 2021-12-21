@@ -1,0 +1,281 @@
+@media screen and (max-width: 1100px) {
+    .header-search {
+        #catalog {
+            width: 100px;
+        }
+    }
+    .contact-form input {
+        width: 350px;
+    }
+}
+@media screen and(max-width:1024px) {
+    .header-btn {
+        padding: 8px 20px;
+    }
+    .header-search {
+        input {
+            width: 220px;
+        }
+    }
+    .contact-form input {
+        width: 300px;
+    }
+}
+@media screen and(max-width:768px) {
+    .search-mobi {
+        display: block;
+    }
+    .banner img {
+        height: 195px;
+    }
+    .top-header {
+        display: none;
+    }
+    .header-menu {
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        height: 100vh;
+        overflow-y: auto;
+        transform: translateX(-200%);
+        transition: 0.3s all ease-in;
+        &.active {
+            transform: translateX(0);
+        }
+    }
+    .menu-list {
+        display: block;
+        width: 300px;
+        .menu-item {
+            line-height: 40px;
+            i:first-child {
+                position: relative;
+            }
+            i {
+                position: absolute;
+                top: 0;
+                right: 0;
+                line-height: 40px;
+            }
+        }
+    }
+    .menu-item.active .sub-menu {
+        display: block;
+    }
+    .sub-menu {
+        position: relative;
+        visibility: inherit;
+        display: none;
+        background: none;
+        a {
+            color: $white;
+        }
+    }
+    .header-bar {
+        display: block;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .section-buy-medicine {
+        padding: 30px 0;
+        .title-sub {
+            font-size: 24px;
+        }
+        .name {
+            font-size: 16px;
+            height: 48px;
+        }
+        .btn {
+            margin-top: 20px;
+            font-size: 16px;
+            padding: 8px 40px;
+        }
+    }
+    .bg-light-blue {
+        padding: 0 10px;
+    }
+    .product-img img {
+        height: 200px;
+    }
+    .contact {
+        margin: 0;
+        .title {
+            font-size: 28px;
+        }
+    }
+    .contact-form {
+        input {
+            width: 267px;
+            margin-right: 10px;
+            height: 50px;
+            padding: 0 20px;
+        }
+        button {
+            width: 150px;
+            height: 50px;
+        }
+    }
+    .detail-product-description {
+        .name {
+            font-size: 24px;
+        }
+        .btn-order {
+            font-size: 16px;
+            padding: 6px 12px;
+            height: auto;
+        }
+    }
+    .footer-logo {
+        text-align: inherit;
+    }
+    .main-detail {
+        h2 {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        .title {
+            font-size: 20px;
+        }
+    }
+    .filter {
+        display: flex;
+        justify-content: space-between;
+    }
+    .filter-icon {
+        display: block;
+        padding: 8px;
+    }
+}
+
+@media screen and(max-width:576px) {
+    .search-mobi {
+        .header-search input {
+            width: 100%;
+            height: 40px;
+        }
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 40px;
+        }
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .header-logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .logo-name {
+        font-size: 14px;
+    }
+    .logo-slogan {
+        font-size: 11px;
+    }
+    .banner img {
+        height: 100px;
+    }
+    .section-buy-medicine {
+        padding: 20px 0;
+        .title-sub {
+            font-size: 18px;
+        }
+        .name {
+            height: auto;
+        }
+        .btn {
+            margin-top: 10px;
+            font-size: 14px;
+            padding: 5px 30px;
+        }
+    }
+    .product-category {
+        padding-bottom: 20px;
+    }
+    .product-item {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .product-info {
+        padding-top: 10px;
+        .name {
+            height: 40px;
+            margin-bottom: 5px;
+        }
+        .new-price {
+            font-size: 16px;
+        }
+    }
+    .evaluate-product i {
+        font-size: 10px;
+    }
+    .contact {
+        padding: 20px 0;
+        .title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    .contact-form {
+        input {
+            height: 44px;
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        button {
+            font-size: 14px;
+            width: 100%;
+            height: 44px;
+        }
+    }
+    .tab-product {
+        display: block;
+        .title {
+            font-size: 20px;
+            margin-right: 0;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .nav-tabs {
+            flex-wrap: nowrap;
+            padding-left: 0;
+            padding-right: 0;
+            display: grid;
+            justify-content: flex-start;
+            grid-auto-columns: max-content;
+            grid-auto-flow: column;
+            grid-gap: 1rem;
+            overflow: auto;
+            overflow-y: hidden;
+        }
+        .nav-link {
+            font-size: 14px;
+        }
+    }
+    .news-item .name {
+        height: auto;
+    }
+    .footer-logo {
+        text-align: center;
+    }
+    .product-slides {
+        img {
+            height: 300px;
+        }
+    }
+    .main-detail {
+        .title {
+            font-size: 18px;
+        }
+    }
+    .product-slides-nav {
+        img {
+            height: 70px;
+        }
+    }
+}

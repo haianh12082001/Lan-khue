@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../assets/fonts/fontawesome-free-5.15.3/css/all.min.css" />
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+        /> -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="../assets/css/slick.css" />
+        <link rel="stylesheet" href="../assets/css/app.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="product-menu">
+                        <div class="head-mobi">
+                            <div class="header-logo">
+                                <a href="" class="d-flex flex-shrink-0">
+                                    <img src="./assets/img/logo.png" alt="" />
+                                    <div class="body">
+                                        <div class="logo-name">LAN KHUE PHARMACY</div>
+                                        <div class="logo-slogan">Not just a pharmacy, but a family</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-search">
+                            <div class="box-search-title">
+                                <span>Danh mục sản phẩm</span>
+                                <i class="fas fa-chevron-down"></i>
+                                <!-- <i class="fas fa-chevron-right"></i> -->
+                            </div>
+                            <div class="group-search">
+                                <form action="">
+                                    <input type="text" />
+                                    <button>
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                                <div class="group-checkbox">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="" checked />
+                                        <span>Tất cả</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="" />
+                                        <span>Sinh lý - Nội tiết tố</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="" />
+                                        <span>Sức khoẻ tim mạch</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="" />
+                                        <span>Hỗ trợ tiêu hoá</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="" />
+                                        <span>Thần kinh lão</span>
+                                    </div>
+                                </div>
+                                <div class="search-btn">
+                                    <a href="">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-search">
+                            <div class="box-search-title">Xuất xứ thương hiệu</div>
+                            <div class="group-search">
+                                <form action="">
+                                    <input type="text" />
+                                    <button>
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                                <div class="group-checkbox">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="" checked />
+                                        <span>Tất cả</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="" />
+                                        <span>Hoa Kỳ</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="" />
+                                        <span>Pháp</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="" />
+                                        <span>Việt Nam</span>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="" />
+                                        <span>Đan mạch</span>
+                                    </div>
+                                </div>
+                                <div class="search-btn">
+                                    <a href="">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-search">
+                            <div class="box-search-title">Giá bán</div>
+                            <div class="group-search">
+                                <a href="" class="price-filter">Dưới 100.000đ </a><br />
+                                <a href="" class="price-filter">100.000đ đến 300.000đ </a><br />
+                                <a href="" class="price-filter">300.000đ đến 500.000đ </a><br />
+                                <a href="" class="price-filter">500.000đ đến 900.000đ </a><br />
+                                <a href="" class="price-filter">Trên 1 triệu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-12 section-product">
+                    <div class="d-lg-flex justify-content-between align-items-center">
+                        <div class="title">Thực phẩm chức năng</div>
+                        <div class="filter">
+                            <div class="filter-sort">
+                                <span>Sắp xếp theo</span>
+                                <select>
+                                    <option value="name">Sản phẩm mới nhất</option>
+                                    <option value="new">Tên sản phẩm</option>
+                                    <option value="old">Sản phẩm cũ nhất</option>
+                                    <option value="hot">Sản phẩm nổi bật</option>
+                                </select>
+                            </div>
+                            <div class="filter-icon">
+                                <i class="fas fa-filter"></i>
+                                <span>Bộ lọc</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-6">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="">
+                                        <img src="../assets/img/product/Rectangle 305.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <div class="category">thực phẩm chức năng</div>
+                                    <div class="name"><a href="">Hoạt Lạc Vương Plus</a></div>
+                                    <div class="price">
+                                        <div class="new-price">12.534.000VNĐ</div>
+                                        <div class="old-price">15.555.612 vnd</div>
+                                    </div>
+                                    <div class="out-stock">
+                                        hết hàng
+                                        <a href="">Liên hệ</a>
+                                    </div>
+                                    <div class="evaluate-product">
+                                        <div class="icon">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="number">119</div>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="">
+                                        <img src="../assets/img/product/Rectangle 305.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <div class="category">thực phẩm chức năng</div>
+                                    <div class="name"><a href="">Hoạt Lạc Vương Plus</a></div>
+                                    <div class="price">
+                                        <div class="new-price">12.534.000VNĐ</div>
+                                        <div class="old-price">15.555.612 vnd</div>
+                                    </div>
+                                    <div class="out-stock">
+                                        hết hàng
+                                        <a href="">Liên hệ</a>
+                                    </div>
+                                    <div class="evaluate-product">
+                                        <div class="icon">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="number">119</div>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="">
+                                        <img src="../assets/img/product/Rectangle 305.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <div class="category">thực phẩm chức năng</div>
+                                    <div class="name"><a href="">Hoạt Lạc Vương Plus</a></div>
+                                    <div class="price">
+                                        <div class="new-price">12.534.000VNĐ</div>
+                                        <div class="old-price">15.555.612 vnd</div>
+                                    </div>
+                                    <div class="out-stock">
+                                        hết hàng
+                                        <a href="">Liên hệ</a>
+                                    </div>
+                                    <div class="evaluate-product">
+                                        <div class="icon">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="number">119</div>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="">
+                                        <img src="../assets/img/product/Rectangle 305.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <div class="category">thực phẩm chức năng</div>
+                                    <div class="name"><a href="">Hoạt Lạc Vương Plus</a></div>
+                                    <div class="price">
+                                        <div class="new-price">12.534.000VNĐ</div>
+                                        <div class="old-price">15.555.612 vnd</div>
+                                    </div>
+                                    <div class="out-stock">
+                                        hết hàng
+                                        <a href="">Liên hệ</a>
+                                    </div>
+                                    <div class="evaluate-product">
+                                        <div class="icon">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="number">119</div>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"
+            integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script> -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="../assets/js/bootstrap.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/clone.js"></script>
+    </body>
+</html>
