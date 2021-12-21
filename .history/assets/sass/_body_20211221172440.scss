@@ -811,21 +811,5 @@
     display: none;
 }
 .table td {
-    border: 1px solid #dee2e6;
-    text-align: center;
-}
-.cart {
-    padding: 40px 0;
-    .module-name {
-        font-size: 1.25rem;
-        @include fw-700;
-    }
-    button {
-        display: block;
-        margin: 0 auto;
-    }
-    .btn-blue {
-        color: $white;
-        background: $blue;
-    }
+    border: 1px solid #ccc;
 }
