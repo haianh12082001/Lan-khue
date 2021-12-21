@@ -59,15 +59,6 @@
             }
         }
     }
-    .product-info {
-        .new-price {
-            font-size: 16px;
-        }
-        .name {
-            height: auto;
-            @include text-truncate(1);
-        }
-    }
     .menu-item.active .sub-menu {
         display: block;
     }

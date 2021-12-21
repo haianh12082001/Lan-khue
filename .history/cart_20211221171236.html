@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3/css/all.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="./assets/css/app.css" />
+    </head>
+    <body>
+        <form action="/gio-hang/thong-tin" method="post">
+            <div class="table-responsive">
+                <table class="table table-bordered footable footable-1 breakpoint-lg" style="">
+                    <thead>
+                        <tr class="footable-header">
+                            <th style="width: 100px; display: table-cell" data-breakpoints="xs" class="footable-first-visible">Hình ảnh</th>
+                            <th style="display: table-cell">Tên sản phẩm</th>
+                            <th style="width: 150px; display: table-cell" data-breakpoints="xs">Giá</th>
+                            <th data-breakpoints="xs" style="display: table-cell">Số lượng</th>
+                            <th style="width: 120px; display: table-cell">Thành tiền</th>
+                            <th style="width: 30px; display: table-cell" class="footable-last-visible"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="row-1023">
+                            <td class="footable-first-visible" style="display: table-cell">
+                                <img
+                                    src="/images/products/2021/11/13/8-814.jpg?w=100"
+                                    class="img-fluid"
+                                    alt="Viên Uống Tăng Cường Sinh Lý Nam Bang Cevrai 60 Viên"
+                                />
+                            </td>
+                            <td style="display: table-cell">
+                                <a href="/vien-uong-tang-cuong-sinh-ly-nam-bang-cevrai-60-vien.html">Viên Uống Tăng Cường Sinh Lý Nam Bang Cevrai 60 Viên</a>
+                            </td>
+                            <td style="display: table-cell">0</td>
+                            <td style="display: table-cell">
+                                <input type="hidden" name="RecordId" value="1023" />
+                                <input type="number" name="Quantity" required="" size="5" min="1" max="999" value="1" />
+                            </td>
+                            <td style="display: table-cell"><strong style="font-size: 16px">0đ</strong></td>
+                            <td class="footable-last-visible" style="display: table-cell">
+                                <a href="#" onclick="removeProductInCart(1023)" style="text-decoration: none" data-id="1023"><i class="fal fa-times"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5" class="text-right">
+                                <i class="fal fa-dollar-sign"></i> Tổng tiền thanh toán:
+                                <span id="cart-total">
+                                    <strong id="total_money" style="color: #f00; font-size: 18px">0đ</strong>
+                                </span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="row d-none d-sm-flex">
+                <div class="col-sm-4">
+                    <a href="/" class="btn btn-sm btn-light"><i class="fa fa-cart-plus"></i> Tiếp tục mua hàng</a>
+                </div>
+                <div class="col-sm-8 text-right">
+                    <button type="submit" class="btn btn-sm btn-light"><i class="fa fa-recycle"></i> Cập nhật</button>
+                    <a href="/gio-hang/thanh-toan" class="btn btn-sm btn-success"><i class="fa fa-check"></i> Đặt hàng</a>
+                </div>
+            </div>
+            <div class="row d-sm-none">
+                <div class="col-6">
+                    <button type="submit" class="btn fz-16 btn-block btn-success"><i class="fal fa-recycle"></i> Cập nhật</button>
+                </div>
+                <div class="col-6">
+                    <a href="/" class="btn fz-16 btn-block btn-info"><i class="fal fa-cart-plus"></i> Tiếp tục mua hàng</a>
+                </div>
+                <div class="col-6 mt-2">
+                    <a
+                        href="/ShoppingCart/EmptyCart"
+                        class="btn fz-16 btn-block btn-danger"
+                        onclick="return confirm('Bạn có chắc chắn hủy đơn hàng này không?')"
+                        ><i class="fal fa-trash"></i> Hủy đơn hàng</a
+                    >
+                </div>
+                <div class="col-6 mt-2">
+                    <a href="/gio-hang/thanh-toan" class="btn fz-16 btn-block btn-primary"><i class="fal fa-check"></i> Đặt hàng</a>
+                </div>
+            </div>
+        </form>
+        <script src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"
+            integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/clone.js"></script>
+    </body>
+</html>

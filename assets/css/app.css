@@ -1266,6 +1266,19 @@ body {
     line-height: 40px;
   }
 
+  .product-info .new-price {
+    font-size: 16px;
+  }
+  .product-info .name {
+    height: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+
   .menu-item.active .sub-menu {
     display: block;
   }
@@ -1399,6 +1412,7 @@ body {
     top: 30px;
     right: 20px;
     font-size: 24px;
+    color: #02438b;
   }
 
   .filter {
