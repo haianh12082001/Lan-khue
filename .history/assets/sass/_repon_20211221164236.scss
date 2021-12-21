@@ -163,21 +163,9 @@
     .box-search-title {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        span {
-            font-size: 16px;
-        }
-        i {
+        .down {
             display: block;
         }
-    }
-    .box-search-title.active {
-        i {
-            transform: rotate(90deg);
-        }
-    }
-    .group-search {
-        display: none;
     }
     .close-product-menu {
         position: absolute;
@@ -423,12 +411,6 @@
         }
         i {
             transform: rotate(90deg);
-        }
-    }
-    .nav-list {
-        li {
-            padding: 8px 0;
-            border-top: 1px solid #ccc;
         }
     }
 }

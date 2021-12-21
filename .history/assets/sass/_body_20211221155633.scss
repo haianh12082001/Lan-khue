@@ -493,9 +493,6 @@
 }
 .category-item {
     margin-bottom: 20px;
-    img {
-        display: none;
-    }
 }
 .tab-news-title {
     font-size: 32px;
@@ -504,9 +501,7 @@
 .list-news {
     border: 1px solid #e7e7e7;
     padding: 15px;
-    .date {
-        font-size: 14px;
-    }
+
     .item {
         border-bottom: 1px solid #e7e7e7;
         padding: 10px 0 20px;
@@ -531,14 +526,13 @@
         font-size: 22px;
         font-weight: 700;
         color: $black;
-        @include text-truncate(2);
     }
     img {
         width: 280px;
         height: 180px;
     }
     .des {
-        @include text-truncate(3);
+        @include text-truncate(4);
     }
 }
 .detail-product-description {

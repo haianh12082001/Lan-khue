@@ -163,21 +163,9 @@
     .box-search-title {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        span {
-            font-size: 16px;
-        }
-        i {
+        .down {
             display: block;
         }
-    }
-    .box-search-title.active {
-        i {
-            transform: rotate(90deg);
-        }
-    }
-    .group-search {
-        display: none;
     }
     .close-product-menu {
         position: absolute;
@@ -396,8 +384,6 @@
     .category-item {
         position: relative;
         border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
-
         img {
             display: inline-block;
             height: 60px;
@@ -414,21 +400,6 @@
             font-size: 18px;
             top: 30px;
             transform: translateY(-50%);
-            color: $blue;
-        }
-    }
-    .category-item.active {
-        .nav-list {
-            display: block;
-        }
-        i {
-            transform: rotate(90deg);
-        }
-    }
-    .nav-list {
-        li {
-            padding: 8px 0;
-            border-top: 1px solid #ccc;
         }
     }
 }
