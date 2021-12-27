@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../assets/fonts/fontawesome-free-5.15.3/css/all.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="../assets/css/slick.css" />
+        <link rel="stylesheet" href="../assets/css/app.css" />
+    </head>
+    <body data-spy="scroll" data-target="#spy" data-offset="50">
+        <div class="box-breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="">Sản phẩm</a></li>
+                    <li class="breadcrumb-item active">abc</li>
+                </ul>
+            </div>
+        </div>
+        <section class="product-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="product-slides">
+                            <div class="item">
+                                <a href=""> <img src="../assets/img/product/Rectangle 305.jpg" alt="" /></a>
+                            </div>
+                            <div class="item">
+                                <img src="../assets/img/product/Rectangle 305 (1).jpg" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="../assets/img/product/Rectangle 305 (2).jpg" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="../assets/img/product/Rectangle 305 (2).jpg" alt="" />
+                            </div>
+                            <div class="item">
+                                <img src="../assets/img/product/Rectangle 305 (2).jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="product-slides-nav">
+                            <div class="nav-item">
+                                <img src="../assets/img/product/Rectangle 305.jpg" alt="" />
+                            </div>
+                            <div class="nav-item">
+                                <img src="../assets/img/product/Rectangle 305 (1).jpg" alt="" />
+                            </div>
+                            <div class="nav-item">
+                                <img src="../assets/img/product/Rectangle 305 (2).jpg" alt="" />
+                            </div>
+                            <div class="nav-item">
+                                <img src="../assets/img/product/Rectangle 305 (2).jpg" alt="" />
+                            </div>
+                            <div class="nav-item">
+                                <img src="../assets/img/product/Rectangle 305 (2).jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-3 pt-lg-0">
+                        <div class="detail-product-description">
+                            <div class="name">Lá Xông Thảo mộc Đệ Đoan 2 gói</div>
+                            <div class="price"><b>95.000đ</b> <span>/Hộp</span></div>
+                            <p><b>Danh mục:</b><a href="">Chăm sóc cơ thể</a></p>
+                            <p><b>Quy cách:</b>Hộp 2 gói</p>
+                            <p>
+                                <b>Công dụng:</b>Lá xông thảo mộc Mệ Đoan là sản phẩm kết hợp từ những dược liệu thiên nhiên giúp kháng khuẩn, giải cảm nhanh,
+                                tăng khả năng miễn dịch chống lại vi khuẩn giải độc cơ thể, giảm nhức mỏi, phục hồi sức khoẻ, mang lại cảm giác thư thái tinh
+                                thần.
+                            </p>
+                            <p><b>Nước sản xuất:</b>Việt Nam</p>
+                            <div class="quantity d-flex">
+                                Chọn số lượng
+                                <div class="product-count">
+                                    <button class="btn-minus" type="button"><i class="fas fa-minus"></i></button>
+                                    <input type="text" aria-valuenow="1" value="1" id="number" />
+                                    <button class="btn-plus" type="button"><i class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="mt-lg-5 mt-3">
+                                <a href="" class="btn-order">CHỌN MUA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-detail mt-3">
+                <div class="container">
+                    <div class="title">THÔNG TIN SẢN PHẨM</div>
+                    <div class="row mt-3">
+                        <div class="col-lg-3 col-12">
+                            <div class="table-contents">
+                                <div class="head">
+                                    <i class="fas fa-list"></i>
+                                    Nội dung chính
+                                </div>
+                                <div class="tab-navigation" id="spy">
+                                    <ul>
+                                        <li class="">
+                                            <a class="nav-link active" href="#motasanpham">Mô tả sản phẩm</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="nav-link" href="#thanhphan">Thành phần</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="nav-link" href="#congdung">Công dụng</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="nav-link" href="#cachdung">Cách dùng</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="nav-link" href="#tacdungphu">Tác dụng phụ</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="nav-link" href="#luuy">Lưu ý</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="nav-link" href="#baoquan">Bảo quản</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-12 mt-3 mt-lg-0">
+                            <div class="main-detail-content">
+                                <h2 id="motasanpham">Mô tả sản phẩm</h2>
+                                <h3 class="name mb-3">Lá Xông Thảo Mộc Mệ Đoan</h3>
+                                <h5>Kháng khuẩn, giải cảm, tăng khả năng miễn dịch và giải độc cơ thể</h5>
+                                <p>
+                                    Lá xông thảo mộc Mệ Đoan&nbsp;kích thích lưu thông máu, loại bỏ độc tố trong cơ thể, giảm đau nhức, hạ sốt, trị cảm mạo. Bên
+                                    cạnh đó, lá xông thảo mộc&nbsp;Mệ Đoan ra đời để tái tạo năng lượng cho các mẹ sau sinh. Với các thành phần hoàn toàn từ
+                                    thiên nhiên lại mang lại rất nhiều công dụng hiệu quả, đặc biệt tốt cho sức khỏe và sắc đẹp, là sự lựa chọn được nhiều mẹ
+                                    sau sinh yêu thích.
+                                </p>
+                                <p style="text-align: center">
+                                    <img src="../assets/img/product/Rectangle 305 (2).jpg" alt="" />
+                                    <em>Lá Xông Thảo Mộc Mệ Đoan</em>
+                                </p>
+                                <h5>Đặc điểm nổi bật bật</h5>
+                                <p>
+                                    Lá xong thảo mộc Mệ Đoan sử dụng 100% các loại lá thảo mộc thiên nhiên đã được rửa sạch và sấy khô, không chứa chất bảo
+                                    quản, an toàn cho sản phụ. Xông nóng giúp giãn nở mạch máu, tăng tiết mồ hôi, giải trừ độc tố cơ thể. Vệ sinh cơ thể, làm
+                                    sạch tế bào chết, giảm mùi hôi cơ thể. Giúp làn da sản phụ phục hồi nhanh sau sinh. Giảm nhức mỏi, mang lại cảm giác dễ
+                                    chịu, thoải mái. Giảm cân hiệu quả. Giảm căng thẳng, thư thái tinh thần.
+                                </p>
+                                <h2 id="thanhphan">Thành phần</h2>
+                                <p>Hương nhu, ngải cứu, lá tràm, ngũ sắc, lá bưởi,...</p>
+                                <p>Nguyên liệu được thu hái 100% từ thiên nhiên, rửa sạch, sấy khô, không chất bảo quản.</p>
+                                <h2 id="congdung">Công dụng</h2>
+                                <p>Kháng khuẩn, giải cảm nhanh, phục hồi sức khoẻ cực tốt.</p>
+                                <p>Xông nóng giúp giãn nở mạch máu, tăng tiết mồ hồi, giảm trừ độc tố cơ thể.</p>
+                                <p>Làm sạch tế bào chết, giảm mùi hôi cơ thể.</p>
+                                <p>Giảm nhức mỏi, mang lại cảm giác dễ chịu thoải mái.</p>
+                                <p>Giảm cân hiệu quả. Giảm căng thẳng, thư thái tinh thần.</p>
+                                <h2 id="cachdung">Công dụng</h2>
+                                <p>Kháng khuẩn, giải cảm nhanh, phục hồi sức khoẻ cực tốt.</p>
+                                <p>Xông nóng giúp giãn nở mạch máu, tăng tiết mồ hồi, giảm trừ độc tố cơ thể.</p>
+                                <p>Làm sạch tế bào chết, giảm mùi hôi cơ thể.</p>
+                                <p>Giảm nhức mỏi, mang lại cảm giác dễ chịu thoải mái.</p>
+                                <p>Giảm cân hiệu quả. Giảm căng thẳng, thư thái tinh thần.</p>
+                                <h2 id="tacdungphu">Công dụng</h2>
+                                <p>Kháng khuẩn, giải cảm nhanh, phục hồi sức khoẻ cực tốt.</p>
+                                <p>Xông nóng giúp giãn nở mạch máu, tăng tiết mồ hồi, giảm trừ độc tố cơ thể.</p>
+                                <p>Làm sạch tế bào chết, giảm mùi hôi cơ thể.</p>
+                                <p>Giảm nhức mỏi, mang lại cảm giác dễ chịu thoải mái.</p>
+                                <p>Giảm cân hiệu quả. Giảm căng thẳng, thư thái tinh thần.</p>
+                                <div class="btn-overlay">
+                                    <a>
+                                        Xem thêm
+                                        <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 pb-3">
+                        <div class="service-item">
+                            <i class="fas fa-truck"></i>
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="name">GIAO MIỄN PHÍ</div>
+                                <div class="des">Cho đơn hàng trên 5 triệu</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-3">
+                        <div class="service-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="name">30 NGÀY ĐỔI TRẢ</div>
+                                <div class="des">Đổi trả miễn phí</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-3">
+                        <div class="service-item">
+                            <i class="fas fa-medal"></i>
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="name">CHẤT LƯỢNG UY TÍN</div>
+                                <div class="des">Từ các thương hiệu</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-3">
+                        <div class="service-item">
+                            <i class="fas fa-headset"></i>
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="name">HỖ TRỢ MIỄN PHÍ</div>
+                                <div class="des">Hỗ trợ 24/7</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-logo mb-lg-4">
+                            <a href="">
+                                <img src="./assets/img/logo.png" alt="" />
+                                <div class="body">
+                                    <div class="logo-name">LAN KHUE PHARMACY</div>
+                                    <div class="logo-slogan">Not just a pharmacy, but a family</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex mb-lg-4">
+                            <i class="fas fa-home"></i>
+                            <div class="body ml-3"><b>Trụ sở chính :</b> Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor</div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="body ml-3">
+                                LIÊN LẠC VỚI CHÚNG TÔI
+                                <br />
+                                <b>Điện thoại:</b>(84) 123 456 789
+                                <br />
+                                <b>Email:info@lankhuepharmacy.vn </b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 pl-lg-5 col-md-6 col-6">
+                        <div class="title">LINH NHANH</div>
+                        <ul>
+                            <li>
+                                <a href="">Dược phẩm</a>
+                            </li>
+                            <li>
+                                <a href="">Thực phẩm chức năng</a>
+                            </li>
+                            <li>
+                                <a href="">Mỹ phẩm</a>
+                            </li>
+                            <li>
+                                <a href="">Sản phẩm cho mẹ bầu</a>
+                            </li>
+                            <li>
+                                <a href="">Sản phẩm cho bé</a>
+                            </li>
+                            <li>
+                                <a href="">Sữa dinh dưỡng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="title">CHÍNH SÁCH</div>
+                        <ul>
+                            <li>
+                                <a href="">Chính sách đổi trả</a>
+                            </li>
+                            <li>
+                                <a href="">Điều khoản sử dụng</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách bảo mật</a>
+                            </li>
+                            <li>
+                                <a href="">Hướng dẫn thanh toán</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="title">FANPAGE</div>
+                        <div class="embed-responsive">
+                            <div
+                                class="fb-page fb_iframe_widget"
+                                data-href="https://www.facebook.com/Thietkewebsite.vico"
+                                data-tabs=""
+                                data-width="500"
+                                data-small-header="false"
+                                data-adapt-container-width="true"
+                                data-hide-cover="false"
+                                data-show-facepile="true"
+                                fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=278&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FHappy-Mom-Care-D%25E1%25BB%258Bch-v%25E1%25BB%25A5-ch%25C4%2583m-s%25C3%25B3c-m%25E1%25BA%25B9-v%25C3%25A0-b%25C3%25A9-102080522276959&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=&amp;width=500"
+                            >
+                                <span style="vertical-align: bottom; width: 278px; height: 130px"
+                                    ><iframe
+                                        name="f525248b2226c4"
+                                        width="500px"
+                                        height="1000px"
+                                        data-testid="fb:page Facebook Social Plugin"
+                                        title="fb:page Facebook Social Plugin"
+                                        frameborder="0"
+                                        allowtransparency="true"
+                                        allowfullscreen="true"
+                                        scrolling="no"
+                                        allow="encrypted-media"
+                                        src="https://www.facebook.com/v12.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df3f094dee5a41%26domain%3Dhappymomcare.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fhappymomcare.com%252Ff2fc6f3fab4b488%26relation%3Dparent.parent&amp;container_width=278&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FHappy-Mom-Care-D%25E1%25BB%258Bch-v%25E1%25BB%25A5-ch%25C4%2583m-s%25C3%25B3c-m%25E1%25BA%25B9-v%25C3%25A0-b%25C3%25A9-102080522276959&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=&amp;width=500"
+                                        style="border: none; visibility: visible; width: 278px; height: 130px"
+                                        class=""
+                                    ></iframe
+                                ></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-12 mb-3">
+                        <div class="d-md-flex align-items-center">
+                            <div class="title">MẠNG XÃ HỘI</div>
+                            <div class="social">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-12">
+                        <div class="d-md-flex align-items-center">
+                            <div class="title">ĐĂNG KÝ NHẬN TIN</div>
+                            <form class="subscribe-form position-relative flex-grow-1">
+                                <input type="email" placeholder="Để lại email của bạn..." required="required" maxlength="50" />
+                                <button type="submit">THEO DÕI</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyright text-center">© 2021 lankhuepharmacy. All rights reserved. Designed by Vicogroup.vn</div>
+        <div id="fb-root"></div>
+        <script src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"
+            integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/clone.js"></script>
+    </body>
+</html>
